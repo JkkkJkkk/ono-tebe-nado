@@ -7,6 +7,9 @@
 	display: flex;
 	margin-left: 27px;
 	align-items: center;
+	list-style: circle;
+	gap: 0 32px;
+	font-size: 18px;
 }
 
 .header__logo {
@@ -18,12 +21,6 @@
 .header__logo-image {
 	width: 130;
 	height: 105px;
-}
-
-.header__links-list {
-	list-style: circle;
-	gap: 0 32px;
-	font-size: 18px;
 }
 
 .header__link_active {
