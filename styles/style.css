@@ -55,6 +55,8 @@
 	height: 757px;
 	background-repeat: no-repeat;
 	background-size: 1100px 757px;
+	display: flex;
+	margin-top: 96px;
 }
 .overlay {
 	background: rgb(0 0 0 / 60%);
