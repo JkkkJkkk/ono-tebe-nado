@@ -26,7 +26,7 @@
 	height: 105px;
 }
 
-.header__link_active {
+.link_active {
 	text-decoration: none;
 }
 
@@ -47,6 +47,7 @@
 	top: 10px;
 	left: 5px;
 }
+
 .address {
 	font-style: normal;
 	line-height: 24px;
@@ -57,29 +58,35 @@
 	font-weight: bold;
 	background-image: url(../images/cover.jpg);
 	width: 1100px;
-	height: 757px;
+	min-height: 757px;
 	background-repeat: no-repeat;
-	background-size: 1100px 757px;
+	background-size: cover;
+	background-position: center;
 	display: flex;
 	margin-top: 96px;
-}
-.overlay {
-	background: rgb(0 0 0 / 60%);
-	width: 100%;
-	height: 100%;
 	color: white;
 	font-size: 100px;
+	flex-wrap: wrap;
+}
+
+.overlay {
+	position: absolute;
+	background: rgb(0 0 0 / 60%);
+	width: 1100px;
+	height: 757px;
+	z-index: 0;
 }
 
 .cover__title {
-	position: relative;
-	width: 1000px;
-	height: 355px;
-	top: 165px;
-	left: 50px;
-	right: 50px;
+	width: 100%;
+	display: flex;
+	margin-left: 50px;
+	margin-top: 165px;
+	margin-right: 50px;
 	font-size: 100px;
 	letter-spacing: 0.3em;
+	flex-direction: column;
+	z-index: 1;
 }
 
 .letter-spacing-extended {
@@ -110,8 +117,10 @@
 	display: flex;
 	align-items: center;
 	gap: 79px;
-	margin: 300px 50px 51px 78px;
+	margin: 130px 50px 51px 81px;
+	z-index: 1;
 }
+
 .cover__description-text {
 	font-family: Raleway, sans-serif;
 	font-weight: normal;
@@ -121,8 +130,9 @@
 }
 
 .bet-button {
+	font-family: Raleway, sans-serif;
 	background-color: transparent;
-	border: 1px solid;
+	border: 1px solid currentColor;
 	color: white;
 	font-size: 22px;
 	font-weight: 500;
@@ -148,10 +158,18 @@
 
 .lots__card-list-item {
 	width: 334px;
-	height: 563px;
+	min-height: 563px;
 }
 
 .card {
+	color: white;
+	width: 334px;
+	min-height: 100%;
+}
+.card .overlay {
+	display: flex;
+	margin-top: -51px;
+	margin-left: -40px;
 	width: 334px;
 	height: 563px;
 }
@@ -159,25 +177,38 @@
 .card-link {
 	text-decoration: none;
 }
+
 .card_type_film {
 	background-image: url(../images/card-lot-01.jpg);
-	width: 334px;
-	height: 563px;
-	background-size: 334px 563px;
+	background-position: center;
+	background-size: cover;
+	padding: 51px 40px 48px 40px;
+	min-height: 563px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .card_type_book {
 	background-image: url(../images/card-lot-02.jpg);
-	width: 334px;
-	height: 563px;
-	background-size: 334px 563px;
+	background-position: center;
+	background-size: cover;
+	padding: 51px 40px 48px 40px;
+	min-height: 563px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .card_type_picture {
 	background-image: url(../images/card-lot-03.jpg);
-	width: 334px;
-	height: 563px;
-	background-size: 334px 563px;
+	background-position: center;
+	background-size: cover;
+	padding: 51px 40px 48px 40px;
+	min-height: 563px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .lots__look-more-link {
@@ -196,27 +227,24 @@
 	font-size: 22px;
 	text-transform: uppercase;
 	text-decoration: underline;
+	z-index: 1;
 }
 
 .card__text {
+	display: flex;
+	justify-content: end;
 	font-size: 20px;
 	font-weight: normal;
-}
-
-.card .overlay {
-	padding: 51px 40px 48px 40px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+	z-index: 1;
 }
 
 .about {
 	width: 1052px;
-	height: 595px;
 	display: flex;
 	margin-left: 24px;
 	margin-top: 146px;
 }
+
 .about__logo {
 	width: 240px;
 	height: 240px;
@@ -242,7 +270,6 @@
 
 .about-text-container {
 	width: 693px;
-	height: 449px;
 	margin-left: 72px;
 	margin-top: 133px;
 }
@@ -258,15 +285,16 @@
 	font-weight: normal;
 	line-height: 24px;
 	margin-top: 100px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 25px;
 }
 
 .footer {
 	display: flex;
 	justify-content: space-between;
-	margin: 180px 50px 88px 50px;
-
+	margin: 182px 50px 88px 50px;
 	width: 1000px;
-	height: 98px;
 }
 
 .footer__address {
@@ -282,10 +310,6 @@
 	left: 20px;
 }
 
-.footer__link_active {
-	text-decoration: none;
-}
-
 .footer__link {
 	text-decoration: none;
 	border-bottom: 1px solid black;
@@ -296,6 +320,7 @@
 	flex-direction: row;
 	gap: 45px;
 }
+
 .footer__social-icon {
 	width: 50px;
 	height: 50px;
