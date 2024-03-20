@@ -173,11 +173,11 @@
 
 .card {
 	color: white;
-	min-height: 100%;
 	position: relative;
 	background-position: center;
 	background-size: cover;
 	min-height: 563px;
+	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	padding: 51px 40px 48px 40px;
