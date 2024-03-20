@@ -1,5 +1,4 @@
 .header__menu {
-	display: flex;
 	margin-top: 87px;
 	display: grid;
 	grid-template-columns: 1fr min-content 1fr;
@@ -179,7 +178,6 @@
 	background-position: center;
 	background-size: cover;
 	min-height: 563px;
-	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	padding: 51px 40px 48px 40px;
