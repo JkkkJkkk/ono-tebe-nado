@@ -1,7 +1,6 @@
 .header__menu {
-	position: relative;
-	top: 87px;
-	bottom: 96px;
+	display: flex;
+	margin-top: 87px;
 	display: grid;
 	grid-template-columns: 1fr min-content 1fr;
 	justify-items: end;
@@ -16,19 +15,9 @@
 	font-size: 18px;
 }
 
-main {
-	position: relative;
-	top: 87px;
-}
-
-footer {
-	position: relative;
-	top: 270px;
-}
-
 .header__logo-image {
-	position: relative;
-	top: 5px;
+	display: flex;
+	margin-top: 5px;
 	width: 148px;
 	height: 105px;
 }
@@ -37,7 +26,7 @@ footer {
 	text-decoration: none;
 }
 
-.underline__link {
+.link {
 	text-underline-position: under;
 }
 
@@ -160,12 +149,15 @@ footer {
 	padding: 12px 32px 11px 31px;
 }
 
+.lots {
+	padding: 179px 24px 0;
+}
+
 .lots__heading {
 	text-transform: uppercase;
 	font-size: 40px;
 	font-weight: bold;
-	margin-left: 64px;
-	margin-top: 179px;
+	margin-left: 40px;
 }
 
 .lots__card-list {
@@ -173,8 +165,6 @@ footer {
 	list-style: none;
 	flex-wrap: wrap;
 	gap: 25px;
-	margin-left: 24px;
-	margin-top: 27px;
 }
 
 .lots__card-list-item {
@@ -184,7 +174,6 @@ footer {
 
 .card {
 	color: white;
-	width: 334px;
 	min-height: 100%;
 	position: relative;
 	background-position: center;
@@ -193,6 +182,8 @@ footer {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	padding: 51px 40px 48px 40px;
+	margin-top: 27px;
 }
 
 .card-link {
@@ -201,17 +192,14 @@ footer {
 
 .card_type_film {
 	background-image: url(../images/card-lot-01.jpg);
-	padding: 51px 40px 48px 40px;
 }
 
 .card_type_book {
 	background-image: url(../images/card-lot-02.jpg);
-	padding: 51px 40px 48px 40px;
 }
 
 .card_type_picture {
 	background-image: url(../images/card-lot-03.jpg);
-	padding: 51px 40px 48px 40px;
 }
 
 .lots__look-more-link {
@@ -221,7 +209,7 @@ footer {
 	width: 192px;
 	text-decoration: none;
 	display: flex;
-	margin-left: 65px;
+	margin-left: 40px;
 	margin-top: 32px;
 }
 
@@ -298,6 +286,7 @@ footer {
 .footer {
 	display: grid;
 	grid-template-columns: 1fr min-content 1fr;
+	margin-top: 180px;
 	margin-left: 50px;
 	margin-bottom: 88px;
 	width: 1000px;
