@@ -134,7 +134,10 @@ footer {
 	display: flex;
 	align-items: center;
 	gap: 79px;
-	margin: 130px 50px 51px 81px;
+
+	margin-top: 130px;
+	margin-left: 81px;
+	margin-bottom: 51px;
 	z-index: 1;
 }
 
@@ -289,6 +292,7 @@ footer {
 	flex-wrap: wrap;
 	justify-content: flex-end;
 	gap: 25px;
+	letter-spacing: 0.01em;
 }
 
 .footer {
